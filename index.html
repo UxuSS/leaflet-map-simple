@@ -45,7 +45,29 @@
   L.marker([43.29966, -2.25445]).addTo(map) // EDIT marker coordinates
   .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
-  </script>
+     <title>Visor GeoEuskadi</title>
+       
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="https://www.geo.euskadi.eus/bisorea/v3/css/GeoeuskadiLoadingSplash_c.css" />
+         
+        <!--  CORE -->
+        <script type="text/javascript" src="https://www.geo.euskadi.eus/bisorea/v3/js/main-compiled.js"></script>
+        <!-- Variables globales de la aplicacion -->
+        <script type="text/javascript" src="https://www.geo.euskadi.eus/bisorea/v3/js/imports_lite.js"></script>
+         
+        <!-- Script de inicializacion -->
+        <script type="text/javascript" >
+            // Funcion de arranque de la aplicacion
+            function loadApp(){
+                mapDiv = "mi_mapa";
+                new Parser_c();
+            }
+       </script>
+        
+    </head>
+    <body style="width:100%;height:100%; margin: 0; padding: 0;" onload="loadApp();">
+        <div id="mi_mapa" style="width: 100%; height: 100%; position:relative;"></div>
+   
 </body>
 </html>
 © 2021 GitHub, Inc.
